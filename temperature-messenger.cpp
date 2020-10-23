@@ -20,7 +20,8 @@ int main()
 
     std::string eventContent = "The%20current%20temperature%20is%20";
     eventContent.append(std::to_string(degreesC),0,4);
-    eventContent.append("\u00B0");
+    // eventContent.append("\u00B0");
+    eventContent.append("degrees");
     eventContent.append("C.");
 
     CURL *curl;
