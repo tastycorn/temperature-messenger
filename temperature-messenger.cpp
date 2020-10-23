@@ -37,6 +37,8 @@ int main()
     theURL.append("&priority=");
     theURL.append(messagePriority);
 
+    std::cout << theURL;
+
     curl_global_init(CURL_GLOBAL_DEFAULT);
 
     curl = curl_easy_init();
