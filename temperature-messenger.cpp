@@ -8,7 +8,7 @@ int main()
 {
     std::string apiKey = "d62c5250f10cd07eb19672f9736b7334b1d0356b";
     std::string applicationName = "Elkwater+Temperature+Monitor";
-    std::string descriptionContent = "NOW";
+    std::string eventContent = "Update";
     std::string messagePriority = "2";
     
     // Get the raw temperature value from the temperature probe and write it to rawTemp
@@ -18,11 +18,11 @@ int main()
     
     double degreesC = rawTemp/1000.0;
 
-    std::string eventContent = "The+current+temperature+is+";
-    eventContent.append(std::to_string(degreesC),0,4);
-    // eventContent.append("\u00B0");
-    eventContent.append("degrees");
-    eventContent.append("C.");
+    std::string descriptionContent = "The+current+temperature+is+";
+    descriptionContent.append(std::to_string(degreesC),0,4);
+    descriptionContent.append("\u00B0");
+    // descriptionContent.append("degrees");
+    descriptionContent.append("C.");
 
     CURL *curl;
     CURLcode result;
