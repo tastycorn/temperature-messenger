@@ -20,7 +20,7 @@ int main()
 
     std::string eventContent = "The current temperature is ";
     eventContent.append(std::to_string(degreesC));
-    eventContent.append("\167");
+    eventContent.append("\u00B0");
     eventContent.append("C.");
 
     std::cout << eventContent;
