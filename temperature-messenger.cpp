@@ -23,7 +23,7 @@ int main()
     eventContent.append("\u00B0");
     eventContent.append("C.");
 
-    std::cout << eventContent;
+    sendProwlMessage(apiKey,applicationName,eventContent,descriptionContent,messagePriority);
 
     return 0;
 }
