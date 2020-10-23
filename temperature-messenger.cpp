@@ -46,7 +46,7 @@ int main()
     if (curl)
     {
         //curl_easy_setopt(curl,CURLOPT_URL,theURL);
-        curl_easy_setopt(curl,CURLOPT_URL,"https://api.prowlapp.com/publicapi/add?apikey=d62c5250f10cd07eb19672f9736b7334b1d0356b&application=test&event=21.5&description=test&priority=1");
+        curl_easy_setopt(curl,CURLOPT_URL,"https://api.prowlapp.com/publicapi/add?apikey=d62c5250f10cd07eb19672f9736b7334b1d0356b&application=test&event=Temperature+Probe&description=test&priority=1");
         result = curl_easy_perform(curl);
         if (result != CURLE_OK)
         {
