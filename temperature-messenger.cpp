@@ -30,9 +30,9 @@ int main()
     theURL.append(apiKey);
     theURL.append("&application=");
     theURL.append(applicationName);
-    theURL.append("&event=");
+    theURL.append("&event=%%");
     theURL.append(eventContent);
-    theURL.append("&description=");
+    theURL.append("%%&description=");
     theURL.append(descriptionContent);
     theURL.append("&priority=");
     theURL.append(messagePriority);
