@@ -2,6 +2,7 @@
 #include <curl/curl.h>
 #include "curlProwl.h"
 #include <fstream>
+#include <string.h>
 
 int main()
 {
@@ -17,7 +18,12 @@ int main()
     
     double degreesC = rawTemp/1000.0;
 
-    std::cout << degreesC;
+    std::string eventContent = "The current temperature is ";
+    eventContent.append(std::to_string(degreesC));
+    eventContent.append("\370");
+    eventContent.append("C.");
+
+    std::cout << eventContent;
 
     return 0;
 }
