@@ -19,7 +19,7 @@ int main()
     double degreesC = rawTemp/1000.0;
 
     std::string eventContent = "The current temperature is ";
-    eventContent.append(std::to_string(degreesC),4);
+    eventContent.append(std::to_string(degreesC),0,4);
     eventContent.append("\u00B0");
     eventContent.append("C.");
 
