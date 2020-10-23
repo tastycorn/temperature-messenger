@@ -18,7 +18,7 @@ int main()
     
     double degreesC = rawTemp/1000.0;
 
-    std::string descriptionContent = "\nThe+current+temperature+is+";
+    std::string descriptionContent = "\u000DThe+current+temperature+is+";
     descriptionContent.append(std::to_string(degreesC),0,4);
     descriptionContent.append("\u00B0");
     // descriptionContent.append("degrees");
