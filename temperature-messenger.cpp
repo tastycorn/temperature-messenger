@@ -7,8 +7,8 @@
 int main()
 {
     std::string apiKey = "d62c5250f10cd07eb19672f9736b7334b1d0356b";
-    std::string applicationName = "Elkwater Temperature Monitor";
-    std::string descriptionContent = "Message sent to Prowl from Raspberry Pi temperature probe";
+    std::string applicationName = "Elkwater%20Temperature%20Monitor";
+    std::string descriptionContent = "Message%20sent%20to%20Prowl%20from%20Raspberry%20Pi%20temperature%20probe";
     std::string messagePriority = "2";
     
     // Get the raw temperature value from the temperature probe and write it to rawTemp
@@ -18,7 +18,7 @@ int main()
     
     double degreesC = rawTemp/1000.0;
 
-    std::string eventContent = "The current temperature is ";
+    std::string eventContent = "The%20current%20temperature%20is%20";
     eventContent.append(std::to_string(degreesC),0,4);
     eventContent.append("\u00B0");
     eventContent.append("C.");
