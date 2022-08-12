@@ -6,10 +6,11 @@
 
 int main()
 {
-    std::string apiKey = "d62c5250f10cd07eb19672f9736b7334b1d0356b";
-    std::string applicationName = "Elkwater+Temperature+Monitor+";
-    std::string eventContent = "+Update";
-    std::string messagePriority = "2";
+    std::string apiKey = "ajr1weuitju1qb1nfu1pv27qbawyxz";
+    std::string userKey = "uhzz5j27magashnwpky9grvf3yuz3h";
+    //std::string applicationName = "Elkwater+Temperature+Monitor+";
+    //std::string eventContent = "+Update";
+    //std::string messagePriority = "2";
     
     // Get the raw temperature value from the temperature probe and write it to rawTemp
     std::ifstream inf{"/sys/bus/w1/devices/28-00000a23e435/temperature"};
