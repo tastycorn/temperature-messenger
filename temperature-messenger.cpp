@@ -1,5 +1,6 @@
 #include <iostream>
 #include <curl/curl.h>
+#include <json/json.h>
 #include "curlProwl.h"
 #include <fstream>
 #include <string.h>
